@@ -1,5 +1,7 @@
 package io
 
+import java.util.*
+
 fun main() {
     print("Enter the word you guess: ")
     val word = readLine()
@@ -13,7 +15,7 @@ fun main() {
         println()
     }
 
-    val letters = word.toLowerCase().toCharArray().toHashSet() //Tree -> {'t', 'r', 'e'}
+    val letters = word.lowercase(Locale.getDefault()).toCharArray().toHashSet() //Tree -> {'t', 'r', 'e'}
     val correctGuesses = mutableSetOf<Char>()
     var fails = 0
 
@@ -32,9 +34,9 @@ fun main() {
             continue
         }
 
-        if (word.toLowerCase().contains(input.toLowerCase())){
+        if (word.lowercase(Locale.getDefault()).contains(input.lowercase(Locale.getDefault()))) {
             correctGuesses.add(input[0].toLowerCase())
-        }else{
+        } else {
             ++fails
         }
     }
@@ -45,7 +47,7 @@ fun main() {
 }
 
 fun printExploredWord(word: String, correctGuesses: Set<Char>) {
-    for (character in word.toLowerCase()) {
+    for (character in word.lowercase(Locale.getDefault())) {
         if (correctGuesses.contains(character)) {
             print("$character ")
         } else {

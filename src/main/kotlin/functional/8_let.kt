@@ -1,6 +1,7 @@
 package functional
 
 import java.io.File
+import java.util.*
 
 fun main(args: Array<String>) {
 
@@ -16,7 +17,7 @@ fun main(args: Array<String>) {
     str?.let {
 
         if (str.isNotEmpty()) {
-            str.toLowerCase()
+            str.lowercase(Locale.getDefault())
         }
     }
 

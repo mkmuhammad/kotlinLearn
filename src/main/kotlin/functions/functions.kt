@@ -32,3 +32,7 @@ fun max(a: Int, b: Int): Int {
         b
     }
 }
+
+// in kotlin the difference between a function and a method is that a function is declared outside a class
+// and a method is declared inside a class.
+// and a procedure is a function without return value.

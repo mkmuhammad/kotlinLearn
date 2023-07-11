@@ -1,13 +1,30 @@
 package loops
 
 fun main(args: Array<String>) {
+    println("For i Loops")
 
     var sum = 0
     for (i in 1..10){
         sum = sum +i
         print("$sum ")
     }
-    println()
+
+    for(i in 1 until 12){
+        println("for i with until")
+        print("$i ")
+    }
+
+    for(i in 1..10 step 2){
+        println("for i with step")
+        print("$i ")
+    }
+
+    for(i in 10 downTo 1 step 2){
+        println("for i with down to and step")
+        print("$i ")
+    }
+
+    println("For Loops with lists")
 
     val list = listOf("Java", "Kotlin", "Python")
 
@@ -18,8 +35,7 @@ fun main(args: Array<String>) {
     for ((index, value)in list.withIndex()){
         print("for index $index there is element $value& ")
     }
-    println()
-    //===============================================================
+    println("===============================================================")
 
     var x =10
     while (x>=0){
@@ -40,7 +56,7 @@ fun main(args: Array<String>) {
     val myList = listOf("Book","Table","laptop")
     for (str in myList){
         if (!str.contains('o')){
-            continue
+            continue //continue keyword skips the current iteration and continue with next iteration
         }
         println(str)
     }

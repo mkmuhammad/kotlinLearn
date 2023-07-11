@@ -11,4 +11,29 @@ fun main(args: Array<String>) {
     //Floating Point Numbers: Float(32 Bits), Double(64 Bits)
     val myFloat: Float = 13.3F
     val myDouble: Double = 3.1214925635897934
+
+    //Booleans
+    var isSunny: Boolean = true
+
+    //Characters (Single Character with single quotes)
+    val myChar: Char = 'a'
+    val myChar2: Char = '1'
+
+    //Strings
+    val  myString: String = "Hello"
+
+    //accessing characters in a string
+    val firstChar = myString[0]
+
+    //Kotlin Operators
+
+    //Arithmetic Operations( +, -, *, /, %)
+
+    //Comparisons( ==, !=, >, <, >=, <=)
+
+    //Assignment Operators( =, +=, -=, *=, /=, %=)
+
+    //Increment/Decrement Operators( ++, --)
+
+
 }
